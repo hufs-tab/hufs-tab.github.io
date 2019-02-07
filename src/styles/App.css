@@ -1,5 +1,7 @@
+@font-face { font-family: 'NanumSquareRound'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); font-weight: normal; font-style: normal; }
 body{
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'NanumSquareRound', sans-serif;
 }
 a {
   color: white;
@@ -11,31 +13,25 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
+  min-height: 40vh;
   padding: 20vh 0;
   text-align: center;
-}
-#bg-img{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 130vh;
-  z-index: -1;
-  opacity: 0.2;
-  margin: 0;
 }
 h1, h2{
   margin-top: 5px;
   margin-bottom: 0;
-  text-shadow: 10px;
 }
 .about-us{
   font-size: 0.9em;
 }
+#tab-logo{
+  width: 70%;
+  max-width: 400px;
+}
 .contents {
   align-items: center;
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  margin: 0;
 }
 .content-box{
   display: flex;
@@ -43,14 +39,17 @@ h1, h2{
   flex-wrap: wrap;
   justify-content: center;
 }
+.content{
+  margin: 20px 10px;
+}
 .content-img {
   max-width: 200px;
   margin: 5px;
   padding: 10px;
 }
-
 .footer{
   background-color: gray;
+  color: white;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -60,6 +59,23 @@ h1, h2{
   margin: 0;
   padding: 10px;
 }
+
+
+#bg-img{
+  /* background: url(../images/samuel-zeller-337030-unsplash.jpg); */
+  background: url(../images/bg_blue.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80vh;
+  z-index: -1;
+  opacity: 0.5;
+  margin: 0;
+}
+
+
 /* Responsive Web */
 @media (min-width: 601px){
   .verticla-nav-button{
@@ -81,20 +97,19 @@ h1, h2{
     float: left;
     margin: 0 10px;
   }
-
   .content-detail{
     margin: auto;
     width: 200px;
   }
-
   .about-us{
     max-width: 500px;
   }
 }
 
+/* Mobile */
 @media (max-width: 600px){
   .verticla-nav-button{
-    background: url(menu.svg);
+    background: url(../images/menu.svg);
     position: fixed;
     top: 0;
     right: 0;
@@ -147,14 +162,9 @@ h1, h2{
   .nav-item a:hover{
     color: rgb(20,20,20);
   }
+
   #bg-img{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 140vh;
-    z-index: -1;
-    opacity: 0.2;
-    margin: 0;
+    height: 700px;
   }
   .content-detail{
     margin: auto;

@@ -12,7 +12,7 @@ const Nav = () => (
                     <a className="" href="#home">HOME</a>
                 </li>
                 <li className="nav-item">
-                    <a className="" href="#annual_events">ANNUAL_EVENTS</a>
+                    <a className="" href="#annual_events">ANNUAL EVENTS</a>
                 </li>
                 <li className="nav-item">
                     <a className="" href="#achievements">ACHIEVEMENTS</a>
