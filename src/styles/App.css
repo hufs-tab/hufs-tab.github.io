@@ -1,17 +1,11 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body{
   font-family: 'Noto Sans KR', sans-serif;
 }
-
 a {
   color: white;
   text-decoration: none;
   font-weight: 450;
 }
-
 .section{
   display: flex;
   flex-direction: column;
@@ -21,34 +15,52 @@ a {
   padding: 20vh 0;
   text-align: center;
 }
-
+#bg-img{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 130vh;
+  z-index: -1;
+  opacity: 0.2;
+  margin: 0;
+}
 h1, h2{
   margin-top: 5px;
   margin-bottom: 0;
+  text-shadow: 10px;
 }
 .about-us{
   font-size: 0.9em;
 }
-
 .contents {
   align-items: center;
   width: 90%;
   margin: auto;
 }
-
 .content-box{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .content-img {
   max-width: 200px;
   margin: 5px;
   padding: 10px;
 }
 
+.footer{
+  background-color: gray;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contact{
+  margin: 0;
+  padding: 10px;
+}
+/* Responsive Web */
 @media (min-width: 601px){
   .verticla-nav-button{
     display: none;
@@ -89,8 +101,8 @@ h1, h2{
     border: none;
     width: 32px;
     height: 32px;
-    margin: 12px;
-    z-index: 1;
+    margin: 22px 12px;
+    z-index: 10;
   }
   nav{
     position: fixed;
@@ -122,7 +134,6 @@ h1, h2{
       transform: translateX(0px);
     }
   }
-  
   .nav-item {
     background-color: rgba(54, 54, 53, 0.6);
     float: none;
@@ -136,12 +147,19 @@ h1, h2{
   .nav-item a:hover{
     color: rgb(20,20,20);
   }
-
+  #bg-img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 140vh;
+    z-index: -1;
+    opacity: 0.2;
+    margin: 0;
+  }
   .content-detail{
     margin: auto;
     width: 90%;
   }
-
   .about-us{
     width: 90%;
   }
