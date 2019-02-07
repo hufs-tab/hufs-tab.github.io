@@ -1,0 +1,148 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 450;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 20vh 0;
+  text-align: center;
+}
+
+h1, h2{
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.about-us{
+  font-size: 0.9em;
+}
+
+.contents {
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.content-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content-img {
+  max-width: 200px;
+  margin: 5px;
+  padding: 10px;
+}
+
+@media (min-width: 601px){
+  .verticla-nav-button{
+    display: none;
+  }
+  nav{
+    background-color: rgba(54, 54, 53, 0.6);
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .nav-item{
+    list-style: none;
+    float: left;
+    margin: 0 10px;
+  }
+
+  .content-detail{
+    margin: auto;
+    width: 200px;
+  }
+
+  .about-us{
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 600px){
+  .verticla-nav-button{
+    background: url(menu.svg);
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: none;
+    width: 32px;
+    height: 32px;
+    margin: 12px;
+    z-index: 1;
+  }
+  nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .navbar {
+    padding: 0;
+    margin: 0;
+    display: none;
+    opacity: 0;
+  }
+  .navbar.responsive{
+    padding: 0;
+    margin: 0;
+    animation: load 0.5s forwards;
+    display: block;
+  }
+  .nav-list{
+    padding:0;
+  }
+  
+  @keyframes load {
+    0%{
+      transform: translateX(200px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .nav-item {
+    background-color: rgba(54, 54, 53, 0.6);
+    float: none;
+    display: block;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+  }
+  .nav-item a:hover{
+    color: rgb(20,20,20);
+  }
+
+  .content-detail{
+    margin: auto;
+    width: 90%;
+  }
+
+  .about-us{
+    width: 90%;
+  }
+}
