@@ -21,6 +21,12 @@ h1, h2{
   margin-top: 5px;
   margin-bottom: 0;
 }
+hr { 
+  width: 80%;
+  max-width: 400px;
+  border-style: solid;
+  border-width: 1.5px;
+}
 .about-us{
   font-size: 0.9em;
 }
@@ -43,10 +49,6 @@ h1, h2{
   margin: 20px 10px;
   padding: 10px;
   transition: 0.5s;
-}
-.content:hover{
-  transform: scale(1.05);
-  box-shadow: 0px 0px 50px rgb(200,200,200);
 }
 .content-img {
   max-width: 150px;
@@ -103,6 +105,10 @@ h1, h2{
     list-style: none;
     float: left;
     margin: 0 10px;
+  }
+  .content:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 50px rgb(200,200,200);
   }
   .content-detail{
     margin: auto;
