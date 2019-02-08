@@ -17,7 +17,7 @@ const Contents = (props) => {
             <div className="content-box">
                 {
                     props.items.map(item =>{
-                        return <Content img={item[1]} detail={item[2]}/>
+                        return <Content detail={item}/>
                     })
                 }
             </div>
@@ -26,8 +26,9 @@ const Contents = (props) => {
 
 const Content = (props) => (
     <div className="content">
-        <img className="content-img" width='65%' src={props.img} alt="content img"/>
-        <p className="content-detail">{props.detail}</p>
+        <img className="content-img" src={props.detail[1]} alt="content img"/>
+        <h2>{props.detail[0]}</h2>
+        <p className="content-detail">{props.detail[2]}</p>
     </div>
 );
 

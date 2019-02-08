@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/new_logo_1.png';
+import logo from '../images/logo6.png';
 
 const AboutUs = () => (
     <div id="home" className="section">
