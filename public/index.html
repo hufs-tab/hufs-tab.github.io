@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&amp;subset=korean" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <meta property="og:title" content="TAB_hufs">
-    <meta property="og:description" content="한국외대 컴퓨터 학회">
-    <meta property="og:image" content="http://www.hufs-tab.ml/static/media/logo6.8d7f4c3f.png">
-    <title>TAB</title>
-  </head>
-  <body>
-    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
-    <div id="root"></div>
-    <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
+    <head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="theme-color" content="#000000" />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&amp;subset=korean"
+            rel="stylesheet"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <meta property="og:title" content="TAB_hufs" />
+        <meta property="og:description" content="한국외대 컴퓨터 학회" />
+        <meta
+            property="og:image"
+            content="http://www.hufs-tab.ml/static/media/logo6.8d7f4c3f.png"
+        />
 
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-134136925-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-        // Store hash
-        var hash = this.hash;
+            gtag("config", "UA-134136925-1");
+        </script>
 
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-    
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });
-  </script>
-  </body>
+        <title>TAB</title>
+    </head>
+    <body>
+        <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+        <div id="root"></div>
+        <script>
+            $(document).ready(function() {
+                // Add smooth scrolling to all links
+                $("a").on("click", function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $("html, body").animate(
+                            {
+                                scrollTop: $(hash).offset().top
+                            },
+                            800,
+                            function() {
+                                // Add hash (#) to URL when done scrolling (default click behavior)
+                                window.location.hash = hash;
+                            }
+                        );
+                    } // End if
+                });
+            });
+        </script>
+    </body>
 </html>
