@@ -3,7 +3,7 @@ import React from "react";
 const Apply = () => {
     return (
         <div id="application" className="contents section">
-        <h2>APPLICATION</h2>
+        <h1>APPLICATION</h1>
         <hr/>
             <h3>가입 신청 링크</h3>
             <span>
