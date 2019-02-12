@@ -8,7 +8,7 @@ const Footer = () => {
                     <br/>
                     PROGRAMMED BY REACT FRAMEWORK
                     <br/>
-                    THANKS TO BYEONGHAK
+                    THANKS TO <a href="https://github.com/bengHak/tab_hufs" target="_blank" style={{color:'white'}}><b>BYEONGHAK</b></a>
                 </p>
             </div>
         </footer>
