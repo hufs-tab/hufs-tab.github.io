@@ -7,7 +7,7 @@ const Apply = () => {
         <hr/>
             <h3>가입 신청 링크</h3>
             <span>
-                <a href="https://bit.ly/2SFFGHG" target="_blank" style={{color:'black'}}>https://bit.ly/2SFFGHG</a>
+                <a href="https://bit.ly/2Gkqt9j" target="_blank" style={{color:'black'}}>https://bit.ly/2Gkqt9j</a>
             </span>
             <br/>
             <b>가입문의</b>
