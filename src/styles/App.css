@@ -56,12 +56,15 @@ hr {
   margin: 5px;
   padding: 10px;
 }
+#faq{
+  background-color: #ddd;
+}
 blockquote {
   display: block;
   width: 100%;
   border-width: 2px 0;
   border-style: solid;
-  border-color: #eee;
+  border-color: #bbb;
   padding: 1.5em 0 0.5em;
   margin: 1.5em 0;
   position: relative;
@@ -72,8 +75,8 @@ blockquote:before {
   top: 0em;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
-  width: 3rem;
+  background: #ddd;
+  width: 2.5rem;
   height: 2rem;
   font: 6em/1.08em 'PT Sans', sans-serif;
   color: #666;

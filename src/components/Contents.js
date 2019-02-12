@@ -6,7 +6,7 @@ let bgColor = '';
 const Contents = (props) => {
     cnt += 1;
     if(cnt%2 === 0){
-        bgColor = 'rgb(230,230,230)';
+        bgColor = '#ddd';
     } else {
         bgColor = 'white';
     }
