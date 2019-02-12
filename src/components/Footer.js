@@ -4,11 +4,14 @@ const Footer = () => {
         <footer>
             <div className="footer">
                 <p className="contact">
-                    <b>Contact</b>
+                    <h2>&lt; 가입문의 &gt;</h2>
+                    <b>학회장: 전판근</b>
                     <br/>
-                    E-mail: qkwl4678@naver.com
+                    <b>전화</b>: 010-8932-2749
                     <br/>
-                    Github: https://github.com/bengHak
+                    <b>카카오톡 ID</b>: Jason97
+                    <br/>
+                    <b>이메일</b>: lifebook0809@gmail.com
                 </p>
             </div>
         </footer>
