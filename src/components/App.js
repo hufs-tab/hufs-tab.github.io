@@ -4,7 +4,7 @@ import '../styles/App.css';
 import Nav from './Nav';
 import AboutUs from './AboutUs';
 import Contents from './Contents';
-import Notice from './Notice';
+import Notice from './FAQ';
 import Footer from './Footer';
 
 import picnic from '../images/food-basket.svg';
