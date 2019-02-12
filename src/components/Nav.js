@@ -18,6 +18,9 @@ const Nav = () => (
                     <a className="" href="#achievements">ACHIEVEMENTS</a>
                 </li>
                 <li className="nav-item">
+                    <a className="" href="#application">APPLICATION</a>
+                </li>
+                <li className="nav-item">
                     <a className="" href="#faq">FAQ</a>
                 </li>
             </ul>

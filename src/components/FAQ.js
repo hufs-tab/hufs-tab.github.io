@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Notice = () => {
+const FAQ = () => {
     return (
         <div id="faq" className="contents section">
             <h1>FAQ</h1>
@@ -40,4 +40,4 @@ const Notice = () => {
     );
 }
 
-export default Notice;
+export default FAQ;

@@ -4,7 +4,8 @@ import '../styles/App.css';
 import Nav from './Nav';
 import AboutUs from './AboutUs';
 import Contents from './Contents';
-import Notice from './FAQ';
+import FAQ from './FAQ';
+import Apply from './Apply';
 import Footer from './Footer';
 
 import picnic from '../images/food-basket.svg';
@@ -37,7 +38,8 @@ const App = () => (
     <AboutUs/>
     <Contents id="annual_events" contentsName="ANNUAL EVENTS" items={annual_events}/>
     <Contents id="achievements" contentsName="ACHIEVEMENTS" items={achievements}/>
-    <Notice/>
+    <Apply/>
+    <FAQ/>
     <Footer></Footer>
   </React.Fragment>
 );
