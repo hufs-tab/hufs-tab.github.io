@@ -10,7 +10,6 @@ const Contents = (props) => {
     } else {
         bgColor = 'white';
     }
-    console.log(bgColor);
     return (
         <div id={props.id} className="contents section" style={{backgroundColor: bgColor}}>
             <h1>{props.contentsName}</h1>

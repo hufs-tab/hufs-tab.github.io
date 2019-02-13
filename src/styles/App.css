@@ -44,6 +44,7 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  width: 80%;
 }
 .content{
   margin: 20px 10px;
