@@ -13,7 +13,6 @@ const FAQ = () => {
                     <p className="answer">
                         아래의 구글 설문을 통해 신청을 받은 후<br/> 면접을 통해 선발할 계획입니다.
                         <br/>
-                        (면접 과제가 있습니다.)
                     </p>
                 </blockquote>
                 <blockquote>
