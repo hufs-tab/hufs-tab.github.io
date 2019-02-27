@@ -8,6 +8,9 @@ const Apply = () => {
             <h3>가입 신청 링크 (3/10까지)</h3>
             <span>
                 <a href="https://bit.ly/2Gkqt9j" target="_blank" style={{color:'black'}}>https://bit.ly/2Gkqt9j</a>
+                <br/>
+                <br/>
+                (면접일자는 가입신청이 끝나고 일괄적으로 공지할 예정)
             </span>
             <br/>
             <b>가입문의</b>
