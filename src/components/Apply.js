@@ -5,7 +5,7 @@ const Apply = () => {
         <div id="application" className="contents section">
         <h1>APPLICATION</h1>
         <hr/>
-            <h3>가입 신청 링크</h3>
+            <h3>가입 신청 링크 (3/10까지)</h3>
             <span>
                 <a href="https://bit.ly/2Gkqt9j" target="_blank" style={{color:'black'}}>https://bit.ly/2Gkqt9j</a>
             </span>
