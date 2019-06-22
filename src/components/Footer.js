@@ -4,7 +4,7 @@ const Footer = () => {
         <footer>
             <div className="footer">
                 <p className="contact">
-                    DEVELOPED BY <b>TAB</b>
+                    DEVELOPED BY <b>Byunghak Ko</b>
                     <br/>
                     PROGRAMMED BY REACT FRAMEWORK
                     <br/>
