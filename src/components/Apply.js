@@ -17,9 +17,10 @@ const Apply = () => {
             <br/>
             학회장: 전판근
             <br/>
-            전화: 010-8932-2749
+            전화: 010-xxxx-xxxx
             <br/>
-            카카오톡 ID: Jason97
+            카카오톡 ID : XXXXXX
+            {/* 카카오톡 ID: Jason97 */}
             <br/>
             이메일: lifebook0809@gmail.com
         </div>

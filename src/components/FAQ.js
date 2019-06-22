@@ -37,14 +37,6 @@ const FAQ = () => {
                     </blockquote>
                 </div>
             </div>
-            <div className="contents section">
-                <h1>질문은 여기에</h1>
-                <hr/>
-                <p>
-                    <a href="https://app2.sli.do/event/o6kobe5m" target="_blank" style={{color:'black'}}>https://app2.sli.do/event/o6kobe5m</a>
-                </p>
-                <iframe src="https://app2.sli.do/event/o6kobe5m" height="700px" width="100%"></iframe>
-            </div>
         </>
     );
 }
