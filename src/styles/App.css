@@ -1,14 +1,22 @@
-@font-face { font-family: 'NanumSquareRound'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); font-weight: normal; font-style: normal; }
-body{
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
   /* font-family: 'Noto Sans KR', sans-serif; */
   font-family: 'NanumSquareRound', sans-serif;
 }
+
 a {
   color: white;
   text-decoration: none;
   font-weight: 450;
 }
-.section{
+
+.section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,49 +25,60 @@ a {
   padding: 20vh 0;
   text-align: center;
 }
-h1, h2{
+
+h1,
+h2 {
   margin-top: 5px;
   margin-bottom: 0;
 }
-hr { 
+
+hr {
   width: 80%;
   max-width: 400px;
   border-style: solid;
   border-width: 1.5px;
 }
-.about-us{
+
+.about-us {
   font-size: 0.9em;
 }
-#tab-logo{
+
+#tab-logo {
   width: 70%;
   max-width: 400px;
 }
+
 .contents {
   align-items: center;
   width: 100%;
   margin: 0;
 }
-.content-box{
+
+.content-box {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   width: 80%;
 }
-.content{
+
+.content {
   margin: 20px 10px;
   padding: 10px;
   transition: 0.5s;
 }
+
 .content-img {
   max-width: 150px;
   max-height: 150px;
   margin: 5px;
   padding: 10px;
 }
-#faq{
-  background-color: #ddd;
+
+#faq {
+  background-color: #ffffff;
 }
+
 blockquote {
   display: block;
   width: 100%;
@@ -70,6 +89,7 @@ blockquote {
   margin: 1.5em 0;
   position: relative;
 }
+
 blockquote:before {
   content: '\201C';
   position: absolute;
@@ -83,14 +103,17 @@ blockquote:before {
   color: #666;
   text-align: center;
 }
-.question{
+
+.question {
   font-weight: 600;
   text-align: left;
 }
-.answer{
+
+.answer {
   text-align: right;
 }
-.footer{
+
+.footer {
   background-color: gray;
   color: white;
   text-align: center;
@@ -98,14 +121,14 @@ blockquote:before {
   padding: 0;
 }
 
-.contact{
+.contact {
   margin: 0;
   font-size: 13px;
   padding: 10px;
 }
 
 
-#bg-img{
+#bg-img {
   /* background: url(../images/samuel-zeller-337030-unsplash.jpg); */
   background: url(../images/bg_blue.png);
   background-repeat: no-repeat;
@@ -122,43 +145,49 @@ blockquote:before {
 
 
 /* Responsive Web */
-@media (min-width: 601px){
-  .verticla-nav-button{
+@media (min-width: 601px) {
+  .verticla-nav-button {
     display: none;
   }
-  nav{
+
+  nav {
     background-color: rgba(54, 54, 53, 0.6);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
   }
+
   .navbar {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .nav-item{
+
+  .nav-item {
     list-style: none;
     float: left;
     margin: 0 10px;
   }
-  .content:hover{
+
+  .content:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 50px rgb(200,200,200);
+    box-shadow: 0px 0px 50px rgb(200, 200, 200);
   }
-  .content-detail{
+
+  .content-detail {
     margin: auto;
     width: 200px;
   }
-  .about-us{
+
+  .about-us {
     max-width: 500px;
   }
 }
 
 /* Mobile */
-@media (max-width: 600px){
-  .verticla-nav-button{
+@media (max-width: 600px) {
+  .verticla-nav-button {
     background: url(../images/menu.svg);
     position: fixed;
     top: 0;
@@ -169,37 +198,43 @@ blockquote:before {
     margin: 22px 12px;
     z-index: 1000;
   }
-  nav{
+
+  nav {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
   }
+
   .navbar {
     padding: 0;
     margin: 0;
     display: none;
     opacity: 0;
   }
-  .navbar.responsive{
+
+  .navbar.responsive {
     padding: 0;
     margin: 0;
     animation: load 0.5s forwards;
     display: block;
   }
-  .nav-list{
-    padding:0;
+
+  .nav-list {
+    padding: 0;
   }
-  
+
   @keyframes load {
-    0%{
+    0% {
       transform: translateX(200px);
     }
-    100%{
+
+    100% {
       opacity: 1;
       transform: translateX(0px);
     }
   }
+
   .nav-item {
     background-color: rgba(54, 54, 53, 0.6);
     float: none;
@@ -210,18 +245,41 @@ blockquote:before {
     text-align: left;
     padding: 10px 20px;
   }
-  .nav-item a:hover{
-    color: rgb(20,20,20);
+
+  .nav-item a:hover {
+    color: rgb(20, 20, 20);
   }
 
-  #bg-img{
+  #bg-img {
     height: 700px;
   }
-  .content-detail{
+
+  .content-detail {
     margin: auto;
     width: 90%;
   }
-  .about-us{
+
+  .about-us {
     width: 90%;
   }
+}
+
+#application {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.apply-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: aquamarine;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
 }
