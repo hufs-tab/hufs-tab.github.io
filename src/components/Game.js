@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react";
 import styled from "styled-components";
 
-const For20 = styled.div`
+const For21 = styled.div`
     font-size: 24px;
     font-weight: bold;
 `;
@@ -70,7 +70,7 @@ const Game = () => {
 
     return (
         <div className="section contents">
-            <For20>20학번을 위한</For20>
+            <For21>21학번을 위한</For21>
             <h1>"코린이" 탈출하기!!</h1>
             <hr />
             <GameContent>
