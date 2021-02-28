@@ -48,7 +48,7 @@ const GoToApply = styled.div`
     cursor: pointer;
 `;
 
-const quizList = ["나는 컴퓨터공학과다", "1학기에 파이썬이나 C언어를 배웠다"];
+const quizList = ["나는 컴퓨터공학부다", "코딩에 관심이 있다!"];
 
 const Game = () => {
     const [stage, setStage] = useState(0);
