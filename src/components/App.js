@@ -22,6 +22,7 @@ import gcp from "../images/gcpug.png";
 import hanium from "../images/hanium.png";
 import hufo from "../images/huformation.png";
 import Game from "./Game";
+import unity_logo from "../images/unity_logo.JPG";
 
 const annual_events = [
     [
@@ -86,7 +87,7 @@ const studyList = [
     [
         "웹",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/280px-React-icon.svg.png",
-        "React를 통해 웹 개발 공부를 했습니다.",
+        "HTML,css,javascript,React를 통해 웹 개발 공부를 했습니다.",
     ],
     [
         "앱",
@@ -95,7 +96,7 @@ const studyList = [
     ],
     [
         "게임",
-        "https://blog.iwanhae.ga/content/images/size/w2000/2019/05/kisspng-unity-game-engine-logo-video-game-corelle-brands-5b059884557253.68756902152709338035.png",
+        unity_logo,
         "Unity를 활용해서 간단한 게임 제작을 해봤습니다.",
     ],
     [
@@ -110,8 +111,13 @@ const studyList = [
     ],
     [
         "알고리즘",
-        "https://w.namu.la/s/862757808bea89c506785a52a2f703ab78c57bc66973ab8fdd5201cc261f2a29096e8f809522f9efa8a8f99c0c43782621fb696358901c287616c8b3c4db27a26cd6db48728ee3b1ba25b500338da358ee2a6cb82eddbb49b275ed5d0aa118d9",
+        "https://st4.depositphotos.com/16138592/30030/v/950/depositphotos_300305330-stock-illustration-algorithm-logo-line-vector-design.jpg",
         "알고리즘 스터디하고 싶은 학우들끼리 진행되었습니다.",
+    ],
+    [
+        "iOS",
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAAClpaWRkZH29vYkJCT6+vrj4+PQ0NDU1NTz8/Oqqqro6Og5OTnr6+uysrJVVVW6urpERERubm59fX1eXl6bm5tkZGTBwcG5ubl0dHQ2NjZUVFRaWloMDAxHR0eLi4vc3NwuLi4gICB6enoRERGMjIwZGRmVlZWfn5+ZK3nWAAAKTUlEQVR4nO1dbWPqKgzesdrWVu3x/d1Zjzvb+f9/8M67GULbAK1AseP5OIPjEUhCCOHlxcPDw8PDw8PDw8PDdUTxNk17JpGm2zhqg1o4yoLjL3s4BtkotEdvNL0OLLK7Y7DLRjboJdnvFtjdccgSw/yG8xbpfWE9NMhvM26b3v+4bAzxm7rB74b91AC/+LVtWhxmsWZ+Sfvrr4i5Vp2zpf7NeLkIVgYN/ipYLMnFkWnjF66ruM2zuK/tX4jRj7e7Kp5rTU7A8E/pq5eZfU8qypalfgy0WI60+LWzdKLjextgks6KnUkf/9ZFcfhMGlw5hsWBXDz6jQX3et2Kn88hKmiF40PfFvI+6Kzd8btjyJvm3w/omwJBDXNeE1JdFDmCh7b0SxUmXNd+N/0abg2udHZQA1Ya1iLWoifdbuDjiE+PalQ81/ftq9Ayov1jOmKIdajpjXUzJNj+11bzfeSqjU10TwuQszqoq1CRWZ0Z6ZweoFFc12uJtkt7N6foFxI0ittaDZEWdVHJMERIo9YZCrSjd89M8IhZV+eNWrlm6MtYNRkN5tk29ocs4gC9fVVtMmW/iku+KIUJ665qkJH5Cu7sJkRg3pei5d7UH/WWwayiWjT8AvJubHjlYB7mvp54TS+hRaxrDQqzhW7beoyojk1k7szSfM+0gUXg5I5N9nSr8Aa2tOShfrCfLm8pygB1KvVRRk9mC+9gNlF21s+2Tc/gzjAwx0bm1+yeUc/cALpmJ5YLIY1E3+GcHYCGvIjDGWwZPo8x/AIzieKFCL+Eu9EnCnu12RcozmYHAb5YIBSDQH6tsI4TACsgDvHDZHY9PFMGhF5OQjFgaCsJQR+YQy2SipSkHIWSGYCRfj5VipSpaIXBan02j+YG8GpEfhv4rw9nOLQAOO8U7RmA4Ye1fulDoMKwdxdyP9RdBgS/ewKhnoqQq1DqvGfoNDxDdSFX4RmqC7kKz1BdyFV4hupCrsIzVBdyFZ6hslC/d12fXQzF6WL4namxdC+fTxNDiFUd1P5tOBlFeTRpEpxMos+WNe43a2LIEsLk+UfDdD67vN1k3wbj42qj3tnRdPG6f7+1PA3G8zRXaqSHITubkp1s5MXrRJ84KiX09NN9seHbh8J5rR6GLGQsnqab0hWsb6xkA5mcqxvupDfVbY5hfvhF4l18+LU9kS3/WWGI1iF9OvVB87tBpIavooZHsb7SrUvJrL5QWpHgjdQckqYXoYnSbA+P1HpKyjdOyyAcBulvMxCNojafJknn6wXp0yQlPahOMeBlxofj8jB75/4mygey5JcWdMz6Y5N/Gu5h73rhP6iYqDn+/Bp/2/pJ/hc3FUTs7TDkjOAel+kIY+5K/748y9FVuTO34EJ8BYteilYYblBXyso2x0byWvqUfVbKGURznz4zssEwRAwOVT82XmlFGgvyk9s3w0yl7zfZYPiX9Z/IZGW5ncVj5hAGuHKU2AiTSs4CQ3SXiMz46DEZ3kmF1LtTtQsKQ0ymy1hgiOYg7X0yfcMnsEIOLGEQYBDJ7HNNDMPD7H/syxJ9ZrpE6cWEFKQQlFTQN+7Khszs1cQQbl6WJwtTpMKNFRPjkgWkKQR5/AXy19PF8J6eWWbI5p94owPOO+eDAcPGdyCMM2QOqeRGAEtDxo4NXLYS+p4iGGfI0uUlgTj2U2C7kENz2T6weeeVhGiGsCuscMh4QKY1tinoBlrDUl7GGcIylKamMl2DfwtUzkMa6mjYeSUhmiH4VdIgHAuFYOOOy0Ds0waL0TRD5pPKY3+QLo/nIwoB3TCvEXxU7bySEMkQOvgm7xns5bndXinINv6oxdI0Q1hcF3lfgAuXXBZWxT8O543q1RbTDGHXoHDxlPBf8gqGXyxjlbE0zRB6rXADcEvIolvyBQwW8tVtmiE0pTxnBPBfipuskSCONZOZSdMM/92bKiTfwpotz2iudFABr+JxdIkhjGHF2cck4OOHHIRpr9ZmqcJtG1iHlfuI/raqTqP8y61pGoUk+EzW4XATECtSQNE0Q5h5ChcZYLGdRVKbj1nFQRTdfdMMYfM0EPX6C+CkyzZK/fjjUGRJOgCmGSbyLgCgMJDKNc7Jli8GeW7eeSUhBc9bess9fLuLKiat5PhA4A8V1ze+e4L9nXSPzqIByo71EM1V6mcxzhBCttIb8WA6lep0fCFhB1DUyYVxhuyASLYQYbTrXFTN4espt9A4Q5amIdEfuaogD1iL1ImB+XgpHK1I6k2wnW6tpw4Ezqxq55WEBAxZz4W7ABZUw15peAfZbljVrF7nlYQEDNnsE27zIZbIxTDgj2Q7YEgFxc0zRPFAwYVxtsvljtFAVZI7JGhIbV4sMETFFklT3meGjdOJYGvIzRdItGYtXlCUkByKEFVy5PQMOxwm7ilP4KehfCYbDHGiQuUoThDBM/cJc2vH1cFg2DO257XdgH3kiq/YoHjhqaA12a63MseB5TGQ09gKQ3S88mm3CsMY7fCnRYuC4mzvJWszQolIpCqywhCXXPzEuAeLqr/l69efS03x+M+4XJwI5yHRwUo7DMuxstnuHFxLKXkVoY7CucXrKovzKN+k5zfu78ZzomQMcU4Njdcq12Uqbyd0l2wxlOXP3kD4zj15S6Wr9qYZ0o/S3HGmWmaylsLNiD2GLyPhw0lvgolW8eALwnu7MW8OGf3y3F9hL8OAbChpqY/hXeIs7mlWma5/kd+bGAWVv84lkLbUluf9DelpV/RRsBFjtWPAl/5mUUgoHi9UHl6ylAXNIcyzf+f5ejlfrNJ6j0MlcW91nS/XdVq2wdAuPEN1IVfhGaoLuQrPUF3IVXiG6kKuwjNUF3IVnqG6kKvwDHmhztZN7H7ty6euX3pVYdj9GrTdryPc/VrQ3a/n/QNqsne/rn7330bo/vsWXXijRHzA0f13Zrr/VtAPeO+p+292sfudXX137Qe8ndf99w+7/4blD3iHFD0H/CwrseZbsj/gPeDuv+n8xO9yK1dFYXlpitWCW0WDt9VxRrL7wW+Us1sj9DJv1KoVoNGoE5dAteVObtv9CF29rFViHGXB7t2rTc6Ay6XWDJ6hS/8ubzJQNc26HliIsjzdjUqhKzh0TUwKzBP6HEU3J2qC66E28DBx4de9i+omwoUlGnlf+KbKyT2jEeNiCw3PO7l7PK6Zfu5yjjiQLwBH8eCSjzo5aCFYLK/uzk4j5fr1u1GJvi+E/IWzmRtb4iH/8AJZHl4NPMVf6/aValSoQPRwwKz4EMey3XEcLgv90ZA1kha+8tcsbUvnTNLSwyBadMOwfE1nmdmfrVFWHL5PV03ThAqram/t51lsy5lL4u1uXNGH9WM6BoO8UrhfLoJVzxxWwWJJ1uHTmmuQzKl/0xp2umfQUHht0jqKV+G1YFO1FNrBXv6c1lNzvDQsFq2E4U7eAcOYm3Y5kuwo74UxHDIrFmo0Lb6LYwWXXVarsNRjCCdZcKQfENON0zHIJvrMew1E8TRNDRr8Xi9Np3H7+xkPDw8PDw8PDw8PDxn+A6KNfV/Ns/jtAAAAAElFTkSuQmCC",
+        "아이폰 어플을 만드는 iOS 스터디를 진행했습니다. (맥북 소지자만 가능)",
     ],
 ];
 
